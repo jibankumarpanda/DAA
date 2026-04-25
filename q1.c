@@ -14,16 +14,16 @@ printf("ehter the target: ");
 scanf("%s", target);
 
 // Sort the words for binary search
-// for(i=0;i<n-1;i++){
-//     for(int j=0;j<n-i-1;j++){
-//         if(strcmp(dict[j], dict[j+1]) > 0){
-//             char temp[50];
-//             strcpy(temp, dict[j]);
-//             strcpy(dict[j], dict[j+1]);
-//             strcpy(dict[j+1], temp);
-//         }
-//     }
-// }
+for(i=0;i<n-1;i++){
+    for(int j=0;j<n-i-1;j++){
+        if(strcmp(dict[j], dict[j+1]) > 0){
+            char temp[50];
+            strcpy(temp, dict[j]);
+            strcpy(dict[j], dict[j+1]);
+            strcpy(dict[j+1], temp);
+        }
+    }
+}
 
 int found=0,res=-1;
 int low=0,high=n-1;
