@@ -34,5 +34,15 @@ void strassen(int A[2][2],int B[2][2],int c[2][2]){
 		A21[i][j]=A[i+2][j];
 		A22[i][j]=A[i+2][j+2];
 
+		B11[i][j]=B[i][j];
+		B12[i][j]=B[i][j+2];
+		B21[i][j]=B[i+2][j];
+		B22[i][j]=B[i+2][j+2];
+	}
+}
+
+
+		
+
 
 	
