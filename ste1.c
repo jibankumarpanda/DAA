@@ -29,6 +29,10 @@ void strassen(int A[2][2],int B[2][2],int c[2][2]){
 
 	for(int i=0;i<2;i++){
 	   for(int j=0;j<2;j++){
+		A11[i][j]=A[i][j];
+		A12[i][j]=A[i][j+2];
+		A21[i][j]=A[i+2][j];
+		A22[i][j]=A[i+2][j+2];
 
 
 	
